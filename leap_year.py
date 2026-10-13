@@ -1,10 +1,11 @@
 import sys
 
 
-def is_leap_year(year: int) -> str:
+def is_leap_year(year):
     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
         return "is leap year"
-    return "is not leap year"
+    else:
+        return "is not leap year"
 
 
 if __name__ == "__main__":
